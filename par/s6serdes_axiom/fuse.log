@@ -1,0 +1,71 @@
+Running: /opt/Xilinx/14.6/ISE_DS/ISE/bin/lin/unwrapped/fuse -relaunch -intstyle "ise" -incremental -lib "secureip" -o "/home/rifat/Projects/apertus/codes/s6serdes_axiom/par/s6serdes_axiom/tb_top_nto1_pll_isim_beh.exe" -prj "/home/rifat/Projects/apertus/codes/s6serdes_axiom/par/s6serdes_axiom/tb_top_nto1_pll_beh.prj" "work.tb_top_nto1_pll" 
+ISim P.68d (signature 0xfbc00daa)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Parsing VHDL file "/home/rifat/Projects/apertus/codes/s6serdes_axiom/par/s6serdes_axiom/../../rtl/serdes_n_to_1_s8_diff.vhd" into library work
+Parsing VHDL file "/home/rifat/Projects/apertus/codes/s6serdes_axiom/par/s6serdes_axiom/../../rtl/serdes_1_to_n_data_s8_diff.vhd" into library work
+Parsing VHDL file "/home/rifat/Projects/apertus/codes/s6serdes_axiom/par/s6serdes_axiom/../../rtl/serdes_1_to_n_clk_pll_s8_diff.vhd" into library work
+Parsing VHDL file "/home/rifat/Projects/apertus/codes/s6serdes_axiom/par/s6serdes_axiom/../../rtl/lvalid_fvalid_gen.vhd" into library work
+Parsing VHDL file "/home/rifat/Projects/apertus/codes/s6serdes_axiom/par/s6serdes_axiom/../../rtl/lfsr.vhd" into library work
+Parsing VHDL file "/home/rifat/Projects/apertus/codes/s6serdes_axiom/par/s6serdes_axiom/../../rtl/components.vhd" into library work
+Parsing VHDL file "/home/rifat/Projects/apertus/codes/s6serdes_axiom/par/s6serdes_axiom/../../rtl/clock_generator_pll_s8_diff.vhd" into library work
+Parsing VHDL file "/home/rifat/Projects/apertus/codes/s6serdes_axiom/par/s6serdes_axiom/../../rtl/nto1_pll_diff_tx.vhd" into library work
+Parsing VHDL file "/home/rifat/Projects/apertus/codes/s6serdes_axiom/par/s6serdes_axiom/../../rtl/nto1_pll_diff_rx.vhd" into library work
+Parsing VHDL file "/home/rifat/Projects/apertus/codes/s6serdes_axiom/par/s6serdes_axiom/../../rtl/check.vhd" into library work
+Parsing VHDL file "/home/rifat/Projects/apertus/codes/s6serdes_axiom/par/s6serdes_axiom/../../rtl/camera.vhd" into library work
+Parsing VHDL file "/home/rifat/Projects/apertus/codes/s6serdes_axiom/par/s6serdes_axiom/../../rtl/top_s6_axiom.vhd" into library work
+Parsing VHDL file "/home/rifat/Projects/apertus/codes/s6serdes_axiom/par/s6serdes_axiom/../../sim/tb_top_nto1_pll.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 53436 KB
+Fuse CPU Usage: 1520 ms
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package std_logic_arith
+Compiling package std_logic_unsigned
+Compiling package sub_module_components
+Compiling package vcomponents
+Compiling architecture rtl of entity lfsr [\lfsr(293)\]
+Compiling architecture rtl of entity lvalid_fvalid_gen [\lvalid_fvalid_gen(751,4)\]
+Compiling architecture rtl of entity camera [camera_default]
+Compiling package textio
+Compiling package vital_timing
+Compiling package vital_primitives
+Compiling package vpkg
+Compiling package numeric_std
+Compiling architecture ibufg_v of entity IBUFG [\IBUFG("DONT_CARE","0",true,"DEF...]
+Compiling architecture bufio2_v of entity BUFIO2 [\BUFIO2(true,1,false,false)\]
+Compiling architecture pll_adv_v of entity PLL_ADV [\PLL_ADV("OPTIMIZED","CLKFBOUT",...]
+Compiling architecture bufg_v of entity BUFG [bufg_default]
+Compiling architecture bufpll_v of entity BUFPLL [\BUFPLL(7,true)\]
+Compiling architecture arch_clock_generator_pll_s8_diff of entity clock_generator_pll_s8_diff [\clock_generator_pll_s8_diff(1,7...]
+Compiling architecture obufds_v of entity OBUFDS [\OBUFDS("DONT_CARE","DEFAULT","S...]
+Compiling architecture oserdes2_v of entity OSERDES2 [\OSERDES2(false,"SDR","SDR",7,"D...]
+Compiling architecture oserdes2_v of entity OSERDES2 [\OSERDES2(false,"SDR","SDR",7,"D...]
+Compiling architecture arch_serdes_n_to_1_s8_diff of entity serdes_n_to_1_s8_diff [\serdes_n_to_1_s8_diff(7,1)\]
+Compiling architecture arch_serdes_n_to_1_s8_diff of entity serdes_n_to_1_s8_diff [\serdes_n_to_1_s8_diff(7,6)\]
+Compiling architecture arch_top_nto1_pll_diff_tx of entity nto1_pll_diff_tx [nto1_pll_diff_tx_default]
+Compiling package std_logic_textio
+Compiling architecture ibufds_v of entity IBUFDS [\IBUFDS("DONT_CARE",false,"FALSE...]
+Compiling architecture iodelay2_v of entity IODELAY2 [\IODELAY2("STAY_AT_LIMIT","SDR",...]
+Compiling architecture iodelay2_v of entity IODELAY2 [\IODELAY2("STAY_AT_LIMIT","SDR",...]
+Compiling architecture bufio2fb_v of entity BUFIO2FB [\BUFIO2FB(true)\]
+Compiling architecture iserdes2_v of entity ISERDES2 [\ISERDES2(true,"SDR",7,"RETIMED"...]
+Compiling architecture iserdes2_v of entity ISERDES2 [\ISERDES2(true,"SDR",7,"RETIMED"...]
+Compiling architecture pll_adv_v of entity PLL_ADV [\PLL_ADV("OPTIMIZED","CLKOUT0","...]
+Compiling architecture arch_serdes_1_to_n_clk_pll_s8_diff of entity serdes_1_to_n_clk_pll_s8_diff [\serdes_1_to_n_clk_pll_s8_diff(1...]
+Compiling architecture iodelay2_v of entity IODELAY2 [\IODELAY2("WRAPAROUND","SDR","ID...]
+Compiling architecture iodelay2_v of entity IODELAY2 [\IODELAY2("WRAPAROUND","SDR","ID...]
+Compiling architecture arch_serdes_1_to_n_data_s8_diff of entity serdes_1_to_n_data_s8_diff [\serdes_1_to_n_data_s8_diff(7,6,...]
+Compiling architecture arch_top_nto1_pll_diff_rx of entity nto1_pll_diff_rx [nto1_pll_diff_rx_default]
+Compiling architecture rtl of entity check [check_default]
+Compiling architecture rtl of entity top_s6_axiom [top_s6_axiom_default]
+Compiling architecture sim of entity tb_top_nto1_pll
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 71 VHDL Units
+Built simulation executable /home/rifat/Projects/apertus/codes/s6serdes_axiom/par/s6serdes_axiom/tb_top_nto1_pll_isim_beh.exe
+Fuse Memory Usage: 128388 KB
+Fuse CPU Usage: 2050 ms
+GCC CPU Usage: 160 ms

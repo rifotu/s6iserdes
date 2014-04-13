@@ -19,11 +19,12 @@ end camera;
 
 architecture rtl of camera is
 
-constant  ONE_SECOND  : integer = 125000000;
+--constant  ONE_SECOND  : integer := 125000000;
+constant  ONE_SECOND  : integer := 1250;
 
 signal strt_test      : std_logic := '0';
 signal lvalid         : std_logic := '0';
-signal lvalid         : std_logic := '0';
+signal fvalid         : std_logic := '0';
 signal lval_frm_lfsr  : std_logic := '0';
 signal fval_frm_lfsr  : std_logic := '0';
 signal pix_frm_lfsr   : std_logic_vector(15 downto 0) := (others => '0');
@@ -60,7 +61,7 @@ port map(
 
          i_place_seed => strt_test,       
          i_lvalid     => lvalid,
-         i_fvalid     => fvalid
+         i_fvalid     => fvalid,
 
          o_lvalid    => lval_frm_lfsr,
          o_fvalid    => fval_frm_lfsr,
@@ -75,7 +76,7 @@ generic map(
 )
 port map(
                i_rst        => i_rst,         -- : in  std_logic;
-               clk          => clk,           -- : in  std_logic; 
+               clk          => i_clk,           -- : in  std_logic; 
    
                i_strt_pulse => strt_test,     -- : in std_logic;  
                                                                                     

@@ -206,7 +206,7 @@ port map (
 	txserdesstrobe 	=> tx_serdesstrobe,
 	gclk    	=> tx_bufg_x1,
 	reset   	=> rst,
-	datain  	=> i_cam_data,
+	datain  	=> i_cam_data
 --	datain  	=> txd
 );
 

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="/home/rifat/Projects/apertus/codes/s6serdes_axiom/par/s6serdes_axiom/tb_top_nto1_pll_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="numeric_std" />
+            <top_module name="std_logic_1164" />
+            <top_module name="std_logic_arith" />
+            <top_module name="std_logic_textio" />
+            <top_module name="std_logic_unsigned" />
+            <top_module name="sub_module_components" />
+            <top_module name="tb_top_nto1_pll" />
+            <top_module name="textio" />
+            <top_module name="vcomponents" />
+            <top_module name="vital_primitives" />
+            <top_module name="vital_timing" />
+            <top_module name="vpkg" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="28" />
+   <wvobject fp_name="/tb_top_nto1_pll/clkp" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clkp</obj_property>
+      <obj_property name="ObjectShortName">clkp</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_nto1_pll/clkn" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clkn</obj_property>
+      <obj_property name="ObjectShortName">clkn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_nto1_pll/rst" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_nto1_pll/sys_error" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">sys_error</obj_property>
+      <obj_property name="ObjectShortName">sys_error</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_nto1_pll/datap" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">datap[5:0]</obj_property>
+      <obj_property name="ObjectShortName">datap[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_nto1_pll/datan" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">datan[5:0]</obj_property>
+      <obj_property name="ObjectShortName">datan[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_nto1_pll/board_clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">board_clk</obj_property>
+      <obj_property name="ObjectShortName">board_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider8" type="divider">
+      <obj_property name="label">TOP LEVEL</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="BkColor">128 128 255</obj_property>
+      <obj_property name="TextColor">230 230 230</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_nto1_pll/i_top_s6_axiom/i_clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">i_clk</obj_property>
+      <obj_property name="ObjectShortName">i_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_nto1_pll/i_top_s6_axiom/i_rst" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">i_rst</obj_property>
+      <obj_property name="ObjectShortName">i_rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_nto1_pll/i_top_s6_axiom/i_data_p" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">i_data_p[5:0]</obj_property>
+      <obj_property name="ObjectShortName">i_data_p[5:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_nto1_pll/i_top_s6_axiom/i_data_n" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">i_data_n[5:0]</obj_property>
+      <obj_property name="ObjectShortName">i_data_n[5:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_nto1_pll/i_top_s6_axiom/i_clk_p" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">i_clk_p</obj_property>
+      <obj_property name="ObjectShortName">i_clk_p</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_nto1_pll/i_top_s6_axiom/i_clk_n" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">i_clk_n</obj_property>
+      <obj_property name="ObjectShortName">i_clk_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_nto1_pll/i_top_s6_axiom/o_data_p" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">o_data_p[5:0]</obj_property>
+      <obj_property name="ObjectShortName">o_data_p[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_nto1_pll/i_top_s6_axiom/o_data_n" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">o_data_n[5:0]</obj_property>
+      <obj_property name="ObjectShortName">o_data_n[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_nto1_pll/i_top_s6_axiom/o_clk_p" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">o_clk_p</obj_property>
+      <obj_property name="ObjectShortName">o_clk_p</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_nto1_pll/i_top_s6_axiom/o_clk_n" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">o_clk_n</obj_property>
+      <obj_property name="ObjectShortName">o_clk_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_nto1_pll/i_top_s6_axiom/o_error" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">o_error</obj_property>
+      <obj_property name="ObjectShortName">o_error</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_nto1_pll/i_top_s6_axiom/data_to_serialize" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">data_to_serialize[41:0]</obj_property>
+      <obj_property name="ObjectShortName">data_to_serialize[41:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_nto1_pll/i_top_s6_axiom/lval" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">lval</obj_property>
+      <obj_property name="ObjectShortName">lval</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_nto1_pll/i_top_s6_axiom/fval" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">fval</obj_property>
+      <obj_property name="ObjectShortName">fval</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_nto1_pll/i_top_s6_axiom/pix" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">pix[39:0]</obj_property>
+      <obj_property name="ObjectShortName">pix[39:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_nto1_pll/i_top_s6_axiom/fabric_clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">fabric_clk</obj_property>
+      <obj_property name="ObjectShortName">fabric_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_nto1_pll/i_top_s6_axiom/loopback_data" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">loopback_data[41:0]</obj_property>
+      <obj_property name="ObjectShortName">loopback_data[41:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_nto1_pll/i_top_s6_axiom/loopback_clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">loopback_clk</obj_property>
+      <obj_property name="ObjectShortName">loopback_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_nto1_pll/i_top_s6_axiom/system_error" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">system_error</obj_property>
+      <obj_property name="ObjectShortName">system_error</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider28" type="divider">
+      <obj_property name="label">SERIALIZER</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="BkColor">128 128 255</obj_property>
+      <obj_property name="TextColor">230 230 230</obj_property>
+   </wvobject>
+</wave_config>

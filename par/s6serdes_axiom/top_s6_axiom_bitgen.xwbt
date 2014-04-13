@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/rifat/Projects/apertus/codes/s6serdes_axiom/par/s6serdes_axiom/top_s6_axiom.ncd
+OUTFILE=/home/rifat/Projects/apertus/codes/s6serdes_axiom/par/s6serdes_axiom/top_s6_axiom.bit
+FAMILY=Spartan6
+PART=xc6slx4-3tqg144
+WORKINGDIR=/home/rifat/Projects/apertus/codes/s6serdes_axiom/par/s6serdes_axiom
+LICENSE=WebPack
+USER_INFO=210884424_0_0_912

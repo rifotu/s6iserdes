@@ -1,6 +1,8 @@
 # Timing
 
-net "rx_bufg_x1" 	period = 125 MHz ; # Receiver global buffer = bit rate/serdes factor eg 1 Gbps/8
+#net "rx_bufg_x1" 	period = 125 MHz ; # Receiver global buffer = bit rate/serdes factor eg 1 Gbps/8
+net "loopback_clk" 	period = 125 MHz ; # Receiver global buffer = bit rate/serdes factor eg 1 Gbps/8
+net "fabric_clk" 	period = 125 MHz ; # Receiver global buffer = bit rate/serdes factor eg 1 Gbps/8
 
 #Pin Locations
 

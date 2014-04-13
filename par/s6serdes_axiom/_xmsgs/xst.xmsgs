@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/rifat/Projects/apertus/codes/s6serdes_axiom/rtl/serdes_n_to_1_s8_diff.vhd" Line 91: Net &lt;<arg fmt="%s" index="1">mdataina[7]</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/rifat/Projects/apertus/codes/s6serdes_axiom/rtl/nto1_pll_diff_tx.vhd</arg>&quot; line <arg fmt="%s" index="2">145</arg>: Output port &lt;<arg fmt="%s" index="3">bufpll_lckd</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">clkgen</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">mdataina&lt;7&gt;</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">mdataina&lt;47&gt;</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">mdataina&lt;39&gt;</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">mdataina&lt;31&gt;</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">mdataina&lt;23&gt;</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">mdataina&lt;15&gt;</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">mdataina&lt;7&gt;</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/rifat/Projects/apertus/codes/s6serdes_axiom/rtl/nto1_pll_diff_rx.vhd</arg>&quot; line <arg fmt="%s" index="2">138</arg>: Output port &lt;<arg fmt="%s" index="3">datain</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">clkin</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/rifat/Projects/apertus/codes/s6serdes_axiom/rtl/nto1_pll_diff_rx.vhd</arg>&quot; line <arg fmt="%s" index="2">138</arg>: Output port &lt;<arg fmt="%s" index="3">rx_pll_lckd</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">clkin</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/rifat/Projects/apertus/codes/s6serdes_axiom/rtl/nto1_pll_diff_rx.vhd</arg>&quot; line <arg fmt="%s" index="2">138</arg>: Output port &lt;<arg fmt="%s" index="3">rx_pllout_xs</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">clkin</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/rifat/Projects/apertus/codes/s6serdes_axiom/rtl/nto1_pll_diff_rx.vhd</arg>&quot; line <arg fmt="%s" index="2">161</arg>: Output port &lt;<arg fmt="%s" index="3">debug</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">datain</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/rifat/Projects/apertus/codes/s6serdes_axiom/rtl/check.vhd</arg>&quot; line <arg fmt="%s" index="2">78</arg>: Output port &lt;<arg fmt="%s" index="3">o_fvalid</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">i_check_lfsr</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">o_data_prll_41</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">i_diff_rx</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">data_d1_41</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">i_check</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">data_d2_41</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">i_check</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">i_diff_rx/o_data_prll_41</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_s6_axiom</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">i_check/i_check_lfsr/fval</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_s6_axiom</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">i_check/data_d2_41</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_s6_axiom</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">i_check/data_d1_41</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_s6_axiom</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">i_diff_rx/clkin/state_FSM_FFd8</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">top_s6_axiom</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;i_diff_rx/clkin/cal_clk&gt; </arg>
+</msg>
+
+</messages>
+

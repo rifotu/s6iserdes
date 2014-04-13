@@ -63,7 +63,7 @@ port map(
 --	refclkin_p   => ,                   -- : in  std_logic;
 --      refclkin_n   => ,                   -- : in  std_logic;   		  -- reference clock input
         refclkin     => i_clk,              -- : in  std_logic;
-        i_cam_data   => data_to_serialize;  -- in std_logic_vector(41 downto 0);
+        i_cam_data   => data_to_serialize,  -- in std_logic_vector(41 downto 0);
         o_fabric_clk => fabric_clk,         -- : out std_logic;
 
 	reset	     => i_rst,     -- : in std_logic;                      -- reset (active high)
@@ -76,7 +76,7 @@ port map(
 i_diff_rx: nto1_pll_diff_rx
 port map(
 
-	reset	     => reset,
+	reset	     => i_rst,
 	clkin_p	     => i_clk_p, 
 	clkin_n	     => i_clk_n,
 	datain_p     => i_data_p, 
@@ -89,7 +89,7 @@ port map(
 i_check: check
 port map(
 
-          i_rst    =>  i_rst
+          i_rst    =>  i_rst,
           i_clk    =>  loopback_clk,
           i_data   =>  loopback_data,
           o_error  =>  system_error

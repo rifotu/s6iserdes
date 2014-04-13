@@ -11,12 +11,12 @@ port(
        i_rst         : in  std_logic;
        clk           : in  std_logic;
 
-       i_lval        : in  std_logic;
-       i_fval        : in  std_logic;
        i_place_seed  : in  std_logic;
+       i_lvalid      : in  std_logic;
+       i_fvalid      : in  std_logic;
        
-       o_lval        : out std_logic;
-       o_fval        : out std_logic;
+       o_lvalid        : out std_logic;
+       o_fvalid        : out std_logic;
        o_pix         : out std_logic_vector(15 downto 0)
 );
 end lfsr;
@@ -39,7 +39,7 @@ begin
   elsif(clk'event and clk = '1') then
     if(i_place_seed = '1') then
       lfsr <= conv_std_logic_vector(seed, 16);
-    elsif(i_lval = '1') then
+    elsif(i_lvalid = '1') then
       lfsr <= lfsr(14 downto 0) & input;
     end if;
   end if;
@@ -48,19 +48,19 @@ end process;
 -- tap choices are made according to XAPP052
 input <= not(lfsr(3) xor lfsr(12) xor lfsr(14) xor lfsr(15));
 
--- delay i_lval for 1 CC 
+-- delay i_lvalid for 1 CC 
 process(clk)
 begin
   if(clk'event and clk = '1') then
-    lval <= i_lval;
-    fval <= i_fval;
+    lval <= i_lvalid;
+    fval <= i_fvalid;
   end if;
 end process;
 
 -- assign outputs
 
-o_fval <= fval;
-o_lval <= lval;
+o_fvalid <= fval;
+o_lvalid <= lval;
 o_pix  <= lfsr;
 
 end rtl;

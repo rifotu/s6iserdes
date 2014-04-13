@@ -54,8 +54,8 @@ generic (
 	PLLD			: integer := 1 ;			-- Parameter to set the division factor in the PLL
 	PLLX			: integer := 8 ;			-- Parameter to set the multiplication factor in the PLL
 	S		        : integer := 8 ;			-- Parameter to set the serdes factor 1..8
-	CLKIN_PERIOD            : real := 6.000;			-- clock period (ns) of input clock on clkin_p
-	DIFF_TERM		: boolean := FALSE  			-- Enable or disable internal differential termination
+	CLKIN_PERIOD            : real := 6.000 			-- clock period (ns) of input clock on clkin_p
+--	DIFF_TERM		: boolean := FALSE  			-- Enable or disable internal differential termination
 );
 port(
 	reset			 :  in std_logic ;                    	-- reset (active high)
@@ -76,12 +76,12 @@ port(
        i_rst         : in  std_logic;
        clk           : in  std_logic;
 
-       i_lval        : in  std_logic;
-       i_fval        : in  std_logic;
+       i_lvalid      : in  std_logic;
+       i_fvalid      : in  std_logic;
        i_place_seed  : in  std_logic;
        
-       o_lval        : out std_logic;
-       o_fval        : out std_logic;
+       o_lvalid      : out std_logic;
+       o_fvalid      : out std_logic;
        o_pix         : out std_logic_vector(15 downto 0)
 );
 end component;
@@ -170,8 +170,7 @@ component nto1_pll_diff_tx is port
 	dataout_p   : out std_logic_vector(5 downto 0);   -- lvds data outputs
         dataout_n   : out std_logic_vector(5 downto 0)
 );  		
-		
-end nto1_pll_diff_tx 
+end component;
 
 component serdes_n_to_1_s8_diff is
 generic (
@@ -187,27 +186,27 @@ port(
 	dataout_p		: out std_logic_vector(D-1 downto 0);		-- output
 	dataout_n		: out std_logic_vector(D-1 downto 0)    	-- output
 );	
-end component ;
+end component;
 
-component clock_generator_pll_s8_diff is
-generic(
-	PLLD			: integer := 1 ;		 -- Parameter to set the division factor in the PLL
-	PLLX			: integer := 8 ;		 -- Parameter to set the multiplication factor in the PLL
-	S		        : integer := 8 ; 		 -- Parameter to set the serdes factor 1..8
-	CLKIN_PERIOD	        : real := 6.000	                 -- clock period (ns) of input clock on clkin_p
-);		
-port
-(
-	reset			: in std_logic ;                -- reset (active high)
---	clkin_p                 : in std_logic ;                -- differential clock input
---      clkin_n	                : in std_logic ;                -- differential clock input
-        clkin                   : in std_logic;
-	ioclk			: out std_logic ;             	-- ioclock from BUFPLL
-	serdesstrobe	        : out std_logic ;               -- serdes strobe from BUFPLL
-	gclk			: out std_logic ;             	-- global clock output from BUFG x1
-	bufpll_lckd		: out std_logic                 -- Locked output from BUFPLL
-); 			
-end component ;
+--component clock_generator_pll_s8_diff is
+--generic(
+--	PLLD			: integer := 1 ;		 -- Parameter to set the division factor in the PLL
+--	PLLX			: integer := 8 ;		 -- Parameter to set the multiplication factor in the PLL
+--	S		        : integer := 8 ; 		 -- Parameter to set the serdes factor 1..8
+--	CLKIN_PERIOD	        : real := 6.000	                 -- clock period (ns) of input clock on clkin_p
+--);		
+--port
+--(
+--	reset			: in std_logic ;                -- reset (active high)
+----	clkin_p                 : in std_logic ;                -- differential clock input
+----      clkin_n	                : in std_logic ;                -- differential clock input
+--        clkin                   : in std_logic;
+--	ioclk			: out std_logic ;             	-- ioclock from BUFPLL
+--	serdesstrobe	        : out std_logic ;               -- serdes strobe from BUFPLL
+--	gclk			: out std_logic ;             	-- global clock output from BUFG x1
+--	bufpll_lckd		: out std_logic                 -- Locked output from BUFPLL
+--); 			
+--end component ;
 
 
 

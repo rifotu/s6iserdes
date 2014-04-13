@@ -21,7 +21,8 @@ end check;
 architecture rtl of check is
  
 
-constant  ONE_SECOND  : integer = 125000000;
+--constant  ONE_SECOND  : integer := 125000000;
+constant  ONE_SECOND  : integer := 1250;
 
 signal deserialized_lvalid   : std_logic  := '0';
 signal deserialized_fvalid   : std_logic  := '0';
@@ -33,6 +34,11 @@ signal strt_test      : std_logic := '0';
 signal data_d1        : std_logic_vector(41 downto 0) := (others => '0');
 signal data_d2        : std_logic_vector(41 downto 0) := (others => '0');
 signal data_d3        : std_logic_vector(41 downto 0) := (others => '0');
+
+signal check_pix_lfsr       : std_logic_vector(39 downto 0) := (others => '0');
+signal lval_lfsr            : std_logic := '0';
+signal pix_lfsr             : std_logic_vector(15 downto 0) := (others => '0');
+signal system_error         : std_logic := '0';
 
 
 begin
@@ -82,18 +88,17 @@ port map(
          i_lvalid     => deserialized_lvalid,
          i_fvalid     => deserialized_fvalid,
 
-         o_lvalid    => check_lval_lfsr,
+         o_lvalid    => lval_lfsr,
          o_fvalid    => open,
-         o_pix       => check_pix_lfsr
+         o_pix       => pix_lfsr
 );
-signal check_pix_lfsr       : std_logic_vector(39 downto 0) := (others => '0');
-signal check_lval_lfsr      : std_logic := '0';
-signal system_error         : std_logic := '0';
+
+check_pix_lfsr <= pix_lfsr(7 downto 0) & pix_lfsr & pix_lfsr;
 
 process(i_clk)
 begin
   if(i_clk'event and i_clk = '1') then
-    if(check_lval_lfsr = '1') then
+    if(lval_lfsr = '1') then
       if(check_pix_lfsr = deserialized_data) then
         system_error <= '0';
       else
