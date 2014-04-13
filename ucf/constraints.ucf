@@ -1,0 +1,41 @@
+# Timing
+
+net "rx_bufg_x1" 	period = 125 MHz ; # Receiver global buffer = bit rate/serdes factor eg 1 Gbps/8
+
+#Pin Locations
+
+net "i_clk_p"		loc = P127	| DIFF_TERM = TRUE | IOSTANDARD = LVDS_25 ;
+net "i_clk_n"		loc = P126	| DIFF_TERM = TRUE | IOSTANDARD = LVDS_25 ;
+
+net "i_data_p[0]"	loc = P124 	| DIFF_TERM = TRUE | IOSTANDARD = LVDS_25 ; 
+net "i_data_n[0]"	loc = P123 	| DIFF_TERM = TRUE | IOSTANDARD = LVDS_25 ; 
+net "i_data_p[1]"	loc = P121 	| DIFF_TERM = TRUE | IOSTANDARD = LVDS_25 ; 
+net "i_data_n[1]"	loc = P120 	| DIFF_TERM = TRUE | IOSTANDARD = LVDS_25 ; 
+net "i_data_p[2]"	loc = P119 	| DIFF_TERM = TRUE | IOSTANDARD = LVDS_25 ; 
+net "i_data_n[2]"	loc = P118 	| DIFF_TERM = TRUE | IOSTANDARD = LVDS_25 ; 
+net "i_data_p[3]"	loc = P117 	| DIFF_TERM = TRUE | IOSTANDARD = LVDS_25 ; 
+net "i_data_n[3]"	loc = P116 	| DIFF_TERM = TRUE | IOSTANDARD = LVDS_25 ; 
+net "i_data_p[4]"	loc = P115 	| DIFF_TERM = TRUE | IOSTANDARD = LVDS_25 ; 
+net "i_data_n[4]"	loc = P114 	| DIFF_TERM = TRUE | IOSTANDARD = LVDS_25 ; 
+net "i_data_p[5]"	loc = P112 	| DIFF_TERM = TRUE | IOSTANDARD = LVDS_25 ; 
+net "i_data_n[5]"	loc = P111 	| DIFF_TERM = TRUE | IOSTANDARD = LVDS_25 ; 
+
+
+net "o_clk_p"		loc = P51 	| IOSTANDARD = LVDS_25 ;
+net "o_clk_n"		loc = P50 	| IOSTANDARD = LVDS_25 ;
+
+net "o_data_p[0]"	loc = P48 	| IOSTANDARD = LVDS_25 ; 
+net "o_data_n[0]"	loc = P47 	| IOSTANDARD = LVDS_25 ; 
+net "o_data_p[1]"	loc = P46 	| IOSTANDARD = LVDS_25 ; 
+net "o_data_n[1]"	loc = P45 	| IOSTANDARD = LVDS_25 ; 
+net "o_data_p[2]"	loc = P44 	| IOSTANDARD = LVDS_25 ; 
+net "o_data_n[2]"	loc = P43 	| IOSTANDARD = LVDS_25 ; 
+net "o_data_p[3]"	loc = P41 	| IOSTANDARD = LVDS_25 ; 
+net "o_data_n[3]"	loc = P40 	| IOSTANDARD = LVDS_25 ; 
+net "o_data_p[4]"	loc = P39 	| IOSTANDARD = LVDS_25 ; 
+net "o_data_n[4]"	loc = P38 	| IOSTANDARD = LVDS_25 ; 
+net "o_data_p[5]"	loc = P58 	| IOSTANDARD = LVDS_25 ; 
+net "o_data_n[5]"	loc = P57 	| IOSTANDARD = LVDS_25 ; 
+
+VCCAUX = 2.5 ;
+
