@@ -1,1 +1,0 @@
--intstyle "ise" -incremental -lib "secureip" -o "/home/rifat/Projects/apertus/codes/s6serdes_axiom/par/s6serdes_axiom/tb_top_nto1_pll_isim_beh.exe" -prj "/home/rifat/Projects/apertus/codes/s6serdes_axiom/par/s6serdes_axiom/tb_top_nto1_pll_beh.prj" "work.tb_top_nto1_pll" 
