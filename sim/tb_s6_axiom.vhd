@@ -6,7 +6,7 @@
 --  /   /\/   /
 -- /___/  \  /   Vendor: Xilinx
 -- \   \   \/    Version: 1.0
---  \   \        Filename: tb_top_nto1_pll.vhd
+--  \   \        Filename: tb_s6_axiom.vhd
 --  /   /        Date Last Modified:  November 5 2009
 -- /___/   /\    Date Created: June 1 2009
 -- \   \  /  \
@@ -58,9 +58,9 @@ library work;
 use work.sub_module_components.all;
 
 
-entity tb_top_nto1_pll is end tb_top_nto1_pll ;
+entity tb_s6_axiom is end tb_s6_axiom ;
 
-architecture sim of tb_top_nto1_pll is
+architecture sim of tb_s6_axiom is
 
 
 signal clkp 	   : std_logic := '0';
