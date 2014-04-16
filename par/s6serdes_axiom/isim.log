@@ -26,3 +26,4 @@ Simulator is doing circuit initialization process.
 Finished circuit initialization process.
 # run all
 Stopped at time : 20810958 ps : File "/home/rifat/Projects/apertus/codes/s6serdes_axiom/rtl/nto1_pll_diff_tx.vhd" Line 193
+# exit 0
